@@ -20,23 +20,151 @@ class: center, middle
 
 ---
 
+  # Announcements
+
+- New TA hours coming soon
+
+- Office hours this week
+  * Amy: Tuesday 4:50pm - 5:50pm (GSB); Wednesday 1pm - 2pm (virtual)
+  * Sami: **Wednesday 1pm - 2pm** (Carnegie 201); Friday 1:30pm - 2:30pm (Carnegie 201)
+
+]
+
+---
+
 .left-column[
-  # Header
+  # Exam Recap
 ]
 .right-column[
 
-Contents
+- Nice work!
+
+- Corner cases, e.g., handling a list of length 1
+
+- Slicing rather than calling a string method
+
+- Short circuiting for or/and
 
 ]
----
-
-# Header
-
-- Contents
-
-<center><img height="350" src="https://static01.nyt.com/images/2022/01/31/crosswords/wordle-art/wordle-art-mediumSquareAt3X.jpg"/></center>
 
 ---
+
+  # Project 2 Requirements
+
+- Make sure to adhere to required design 
+
+- Use a [docstring](https://peps.python.org/pep-0257/) for every function
+
+- Use type hints in all cases
+
+- Pay attention to variable names
+
+- Cite use of concepts we haven't discussed
+
+*Deductions may be taken for neglecting to do any of the above.*
+
+---
+
+# Project 2 - Other Design Elements
+
+- Functions perform one task
+
+- Repeated code is converted into a function or loop
+
+- Use constants where appropriate
+
+---
+
+# Style Considerations
+
+- Review [PEP 8](https://peps.python.org/pep-0008/)
+
+From the guide:
+
+- Limit all lines to a maximum of 79 characters.
+
+- Surround top-level function and class definitions with two blank lines.
+
+- Avoid extraneous whitespace 
+
+- Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not).
+
+- Compound statements (multiple statements on the same line) are generally
+discouraged
+
+- Naming conventions
+
+---
+
+# PEP 8 Style Checker
+
+- [Install instructions](https://pypi.org/project/pep8/)
+
+- Example
+
+
+---
+
+class: center, middle
+
+# Project Questions?
+
+---
+
+# Recursion
+
+- A *recursive* function is a function defined in terms of itself.
+
+<center><img height="350" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Russian-Matroshka.jpg/1920px-Russian-Matroshka.jpg"/></center>
+
+---
+
+# Factorial
+
+- n! is n * (n-1)!
+
+- Let's implement this iteratively...then without using a loop!
+
+---
+
+# Why recursion?
+
+- Some problems are more easily solved recursively.
+  * Traversal of a tree structure...like your file system!
+
+# Why not recursion?
+
+- Recursion can be highly inefficient as resources are allocated for each function call.
+
+---
+
+# Rules of Recursion
+
+1. You must have a base case
+
+2. Each recursive call must make progress toward the base cases
+
+3. Assume recursive calls work
+
+---
+
+```python
+if(base case)
+	solve
+else
+	do task
+	recursive call
+```
+
+```python
+if(base case)
+	solve
+else
+	recursive call
+  do task
+```
+
+
 ---
 <!-- .left-column[
   ## 
